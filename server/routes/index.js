@@ -7,6 +7,7 @@ var connector = new builder.ChatConnector({
   appId: 'ed1cf83d-a2cf-4e5a-b8c6-ff455d21a295',
   appPassword: 'amFNS816@+_]wysdaDBEE51'
 });
+var inMemoryStorage = new builder.MemoryBotStorage();
 
 router.post('/api/messages', connector.listen())
 const BMW = {
